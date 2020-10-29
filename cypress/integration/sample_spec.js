@@ -22,7 +22,7 @@ describe('My first Cypress test', function() {
     })
 
     // Test 4
-    it('Tests the url', function() { // will fail because the such url doesn't include '/home'
+    it('Tests the url', function() { // will fail because the url doesn't include '/home'
         cy.url()
             .should('include', '/home') // an assertion
     })
